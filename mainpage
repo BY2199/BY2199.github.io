@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLC Controls, Robotics & Electrical Systems | Johor & Singapore</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-dark: #0f172a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0 0 1.5rem 0;
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #22c55e;
+            color: white;
+            font-weight: bold;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #16a34a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            color: var(--text-dark);
+            margin-top: 0;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.5rem;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .badge {
+            background: #eff6ff;
+            color: var(--accent);
+            border: 1px solid #bfdbfe;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>On-Demand PLC, Robotics & Electrical Engineering</h1>
+        <p>B.Eng (Mechatronics) • System Architecture • Servo Tuning • CE Compliance | Johor & Singapore</p>
+        <a href="https://wa.me/60199818210?text=Hi%20Kong,%20I%20am%20looking%20for%20PLC/Controls%20engineering%20support." class="cta-btn" target="_blank">💬 Chat on WhatsApp</a>
+    </header>
+
+    <div class="container">
+        <!-- TECHNICAL SKILLS & STACK -->
+        <div class="section">
+            <h2>Technical Core & Supported Platforms</h2>
+            <div class="badge-container">
+                <span class="badge">PLC & HMI (Allen Bradley, Omron, Mitsubishi)</span>
+                <span class="badge">Robot Programming (ABB, Yaskawa)</span>
+                <span class="badge">Electrical CAD (EPLAN, E3 Series, AutoCAD)</span>
+                <span class="badge">Precision Servo Tuning (Fuji Alpha)</span>
+                <span class="badge">Industrial Comms (Ethernet, RS232)</span>
+                <span class="badge">CE Compliance & Cable Sizing</span>
+            </div>
+        </div>
+
+        <!-- SERVICES OFFERED -->
+        <div class="section">
+            <h2>Services for Machine Builders (OEMs) & Integrators</h2>
+            <ul class="service-list">
+                <li>⚙️ <strong>End-to-End Control Systems:</strong> Complete system architecture design, Bill of Materials (BOM) selection, and electrical schematics creation using EPLAN/AutoCAD.</li>
+                <li>🤖 <strong>PLC, HMI & Robotics Integration:</strong> Full logic development paired with 6-axis robot programming (ABB, Yaskawa) for automated CNC pick-and-place, assembly, or sorting cells.</li>
+                <li>🎯 <strong>Motion Control & High-Precision Servo Tuning:</strong> Expert parameter tuning for servo drives to minimize positional error and cycle times.</li>
+                <li>🛠️ <strong>CE Standard Retrofits & Safety Audits:</strong> Complete redesign of machine cable routing, cable sizing, and safety interlocking to pass external CE certification audits for overseas export.</li>
+                <li>🌐 <strong>Site Commissioning & Remote Support:</strong> Hardware functional testing, site integration, and after-sales troubleshooting across local and international sites.</li>
+            </ul>
+        </div>
+
+        <!-- HIGHLIGHTED PROJECTS -->
+        <div class="section">
+            <h2>Proven Project Engineering Experience</h2>
+            <ul class="service-list">
+                <li>🔥 <strong>Gas Screw Compressor Control Panel:</strong> Complete PLC I/O mapping, wiring diagrams, and software implementation integrated with Safety Fire & Gas systems.</li>
+                <li>🔄 <strong>Dual Lane Inverter System:</strong> Custom PCB inverter enclosure design utilizing Ethernet/RS232 protocols for machine-to-machine memory data transfer.</li>
+                <li>🤖 <strong>Robotic Turning & Milling Cell:</strong> Rapid setup and precision robot teaching position configuration for live industrial trade show demonstrations (Singapore ITAP).</li>
+            </ul>
+        </div>
+
+        <!-- REGIONAL COVERAGE -->
+        <div class="section">
+            <h2>Regional Coverage</h2>
+            <p>Providing project-based subcontract engineering across key manufacturing hubs:</p>
+            <p><strong>Johor Industrial Regions:</strong> Senai, Kulai, Pasir Gudang, SILC, Gelang Patah, Tanjung Langsat.<br>
+            <strong>Cross-Border:</strong> Singapore Automation System Integrators & Machine Builders (Remote & On-Site Support).</p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="section" style="text-align: center;">
+            <h2>Need Extra Controls Capacity for an Upcoming Build?</h2>
+            <p>Let's discuss how we can keep your machine build schedule on track without full-time payroll overhead.</p>
+            <p><strong>Engineer:</strong> Kong Beng Yu (B.Eng Mechatronics)</p>
+            <p><strong>Phone:</strong> +6019-9818210 | <strong>Email:</strong> bengyu.kong@gmail.com</p>
+            <a href="https://wa.me/60199818210?text=Hi%20Kong,%20I%20am%20looking%20for%20PLC/Controls%20engineering%20support." class="cta-btn" target="_blank">Contact via WhatsApp</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Kong Beng Yu — Controls & Automation Services. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
