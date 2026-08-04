@@ -3,175 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLC Controls & Industrial Automation | Johor & Ipoh</title>
+    <title>Kong Beng Yu | On-Demand PLC & Automation Engineering</title>
     <style>
         :root {
-            --primary: #0f172a;
-            --accent: #2563eb;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #334155;
-            --text-dark: #0f172a;
+            --bg-dark: #0b0f19;
+            --card-bg: #151c2c;
+            --card-border: #232d42;
+            --accent-blue: #38bdf8;
+            --accent-green: #22c55e;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg);
-            color: var(--text);
+            background-color: var(--bg-dark);
+            color: var(--text-light);
             line-height: 1.6;
         }
 
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 3rem 1.5rem;
+        /* HERO SECTION */
+        .hero {
+            padding: 4rem 1.5rem 3rem;
             text-align: center;
+            background: radial-gradient(circle at top, #1e293b 0%, var(--bg-dark) 80%);
+            border-bottom: 1px solid var(--card-border);
         }
 
-        header h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2.2rem;
-            letter-spacing: -0.5px;
+        .badge-tag {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
         }
 
-        header p {
-            margin: 0 0 1.5rem 0;
-            color: #94a3b8;
-            font-size: 1.1rem;
+        .hero h1 {
+            font-size: 2.8rem;
+            margin: 0 0 1rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+
+        .hero h1 span {
+            color: var(--accent-blue);
+        }
+
+        /* 3-SECOND EYE CATCHER BANNER */
+        .hook-banner {
+            max-width: 750px;
+            margin: 1.5rem auto 2rem;
+            background: linear-gradient(90deg, rgba(34, 197, 94, 0.15) 0%, rgba(56, 189, 248, 0.15) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 1.2rem 1.8rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
         }
 
         .cta-btn {
-            display: inline-block;
-            background-color: #22c55e;
-            color: white;
-            font-weight: bold;
-            padding: 0.8rem 1.5rem;
-            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--accent-green);
+            color: #000000;
+            font-weight: 700;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 1rem;
-            transition: background 0.2s;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
         }
 
         .cta-btn:hover {
+            transform: translateY(-2px);
             background-color: #16a34a;
+            color: #ffffff;
         }
 
-        .container {
+        /* STATS BAR */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
             max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
+            margin: -2rem auto 3rem;
+            padding: 0 1.5rem;
         }
 
-        .section {
+        .stat-card {
             background: var(--card-bg);
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 1.8rem;
+            border: 1px solid var(--card-border);
+            padding: 1.2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 0 1.5rem 3rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
             margin-bottom: 1.5rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
         }
 
-        h2 {
-            color: var(--text-dark);
+        /* GRID LAYOUTS */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.8rem;
+            transition: border 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .card h3 {
             margin-top: 0;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 0.5rem;
+            font-size: 1.2rem;
+            color: var(--accent-blue);
         }
 
-        .badge-container {
+        /* TECH BADGES */
+        .badge-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.6rem;
             margin-top: 1rem;
         }
 
-        .badge {
-            background: #eff6ff;
-            color: var(--accent);
-            border: 1px solid #bfdbfe;
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
+        .tech-pill {
+            background: #1e293b;
+            color: #f1f5f9;
+            border: 1px solid #334155;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.88rem;
             font-weight: 600;
         }
 
-        .service-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .service-list li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid #f1f5f9;
-        }
-
-        .service-list li:last-child {
-            border-bottom: none;
+        /* FOOTER & CONTACT */
+        .contact-box {
+            background: linear-gradient(135deg, #151c2c 0%, #1e293b 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
         }
 
         footer {
             text-align: center;
             padding: 2rem;
-            color: #64748b;
-            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
         }
 
         @media (max-width: 600px) {
-            header h1 { font-size: 1.6rem; }
+            .hero h1 { font-size: 1.9rem; }
+            .hook-banner { font-size: 1.05rem; padding: 1rem; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>On-Demand PLC & Controls Engineering</h1>
-        <p>Remote Logic Development • Virtual Commissioning • HMI & SCADA | Johor & Ipoh</p>
-        <!-- REPLACE 60123456789 WITH YOUR ACTUAL PHONE NUMBER -->
-        <a href="https://wa.me/60199818210?text=Hi,%20I%20am%20looking%20for%20PLC/Controls%20engineering%20support." class="cta-btn" target="_blank">💬 Chat on WhatsApp</a>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <span class="badge-tag">⚡ On-Demand Controls Engineering</span>
+        <h1>Subcontract PLC & Automation Partner <br><span>Johor & Singapore</span></h1>
+        
+        <!-- 3-SECOND EYE CATCHER -->
+        <div class="hook-banner">
+            🚀 "Bring your hardware & mechanics — I’ll write the logic and make it run."
+        </div>
+
+        <a href="https://wa.me/60199818210?text=Hi%20Kong,%20I%20have%20a%20machine%20build%20and%20need%20PLC/Controls%20support." class="cta-btn" target="_blank">
+            💬 Direct WhatsApp Engineering Support
+        </a>
     </header>
 
-    <div class="container">
-        <div class="section">
-            <h2>Supported Platforms</h2>
-            <div class="badge-container">
-                <span class="badge">Rockwell / Allen-Bradley (Studio 5000)</span>
-                <span class="badge">Siemens (TIA Portal S7-1200 / S7-1500)</span>
-                <span class="badge">Omron (Sysmac Studio)</span>
-                <span class="badge">AutomationDirect / Click PLC</span>
-                <span class="badge">Mitsubishi MELSEC</span>
-                <span class="badge">Ignition SCADA / IIoT (MQTT)</span>
-            </div>
+    <!-- QUICK CREDIBILITY STATS -->
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-number">B.Eng</div>
+            <div class="stat-label">Mechatronics Degree</div>
         </div>
-
-        <div class="section">
-            <h2>Services for Machine Builders (OEMs) & Integrators</h2>
-            <ul class="service-list">
-                <li>⚙️ <strong>Offline PLC & HMI Programming:</strong> Structured, modular code built from your electrical schematics and Sequence of Operations (SOO).</li>
-                <li>🖥️ <strong>Virtual Commissioning & Simulation:</strong> Testing and debugging logic using software simulators prior to panel power-on to cut shop-floor time.</li>
-                <li>🔄 <strong>Legacy Upgrades & Code Translation:</strong> Conversion of old PLC programs (e.g., S7-300 to TIA Portal, SLC500 to ControlLogix).</li>
-                <li>📡 <strong>Industrial IoT & Edge Setup:</strong> Connecting floor machinery to SCADA/Cloud networks via Modbus, OPC-UA, or MQTT.</li>
-            </ul>
+        <div class="stat-card">
+            <div class="stat-number">Multi-PLC</div>
+            <div class="stat-label">AB • Siemens • Omron</div>
         </div>
-
-        <div class="section">
-            <h2>Regional & Remote Coverage</h2>
-            <p>Providing project-based subcontract engineering across key manufacturing hubs:</p>
-            <p><strong>Johor Hubs:</strong> Senai Industrial Region, Kulai, Pasir Gudang, SILC, Gelang Patah, Tanjung Langsat.<br>
-            <strong>Cross-Border:</strong> Singapore Automation System Integrators & Machine Builders (Remote Support).</p>
+        <div class="stat-card">
+            <div class="stat-number">6-Axis</div>
+            <div class="stat-label">ABB & Yaskawa Robots</div>
         </div>
-
-        <div class="section" style="text-align: center;">
-            <h2>Need Extra Controls Capacity for an Upcoming Build?</h2>
-            <p>Let's discuss how we can keep your machine build schedule on track without full-time payroll overhead.</p>
-            <!-- REPLACE YOUR EMAIL AND PHONE -->
-            <p><strong>Email:</strong> your.email@example.com | <strong>Location:</strong> Johor, Malaysia</p>
-            <a href="https://wa.me/60123456789?text=Hi,%20I%20am%20looking%20for%20PLC/Controls%20engineering%20support." class="cta-btn" target="_blank">Contact via WhatsApp</a>
+        <div class="stat-card">
+            <div class="stat-number">Turnkey</div>
+            <div class="stat-label">Site Testing & Support</div>
         </div>
     </div>
 
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- SERVICES -->
+        <h2 class="section-title">⚡ How I Help Machine Builders (OEMs) & Integrators</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>⚙️ PLC & HMI Turnkey Logic</h3>
+                <p>Offline programming, sequence of operations (SOO) development, and structured code architecture built directly from your electrical schematics.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 Robotics & Servo Tuning</h3>
+                <p>Precision 6-axis robot programming (ABB, Yaskawa) and high-speed Fuji Alpha servo tuning to eliminate cycle time lag and positional error.</p>
+            </div>
+            <div class="card">
+                <h3>📐 Electrical CAD & System Design</h3>
+                <p>Complete control architecture, Bill of Materials (BOM) selection, and panel schematics designed using EPLAN, E3 Series, and AutoCAD.</p>
+            </div>
+            <div class="card">
+                <h3>🛠️ Functional Testing & Commissioning</h3>
+                <p>On-site or remote functional testing, hardware debugging, and after-sales support to ensure machine sign-off at customer sites.</p>
+            </div>
+        </div>
+
+        <!-- TECH STACK -->
+        <h2 class="section-title">🛠️ Supported Hardware & Software Stack</h2>
+        <div class="card" style="margin-bottom: 2.5rem;">
+            <div class="badge-grid">
+                <span class="tech-pill">Allen-Bradley / Rockwell (Studio 5000)</span>
+                <span class="tech-pill">Siemens (TIA Portal S7-1200 / S7-1500)</span>
+                <span class="tech-pill">Omron (Sysmac Studio)</span>
+                <span class="tech-pill">Mitsubishi MELSEC</span>
+                <span class="tech-pill">ABB Robots</span>
+                <span class="tech-pill">Yaskawa Robots</span>
+                <span class="tech-pill">Fuji Alpha Servo Drives</span>
+                <span class="tech-pill">EPLAN Electric P8</span>
+                <span class="tech-pill">E3 Series / AutoCAD</span>
+                <span class="tech-pill">Ethernet / RS232 / Modbus</span>
+            </div>
+        </div>
+
+        <!-- PROVEN EXPERIENCE HIGHLIGHTS -->
+        <h2 class="section-title">🏆 Featured Engineering Deliverables</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>🔥 Fire & Gas Compressor Panel</h3>
+                <p>Engineered PLC I/O documentation, wiring schematics, and control logic integrated with emergency Fire & Gas safety shutdown systems.</p>
+            </div>
+            <div class="card">
+                <h3>🔄 Dual Lane PCB Inverter System</h3>
+                <p>Custom PCB dual lane enclosure setup utilizing Ethernet/RS232 protocols for machine-to-machine memory data transfer.</p>
+            </div>
+        </div>
+
+        <!-- CONTACT BOX -->
+        <div class="contact-box">
+            <h2 style="margin-top:0; font-size: 1.8rem; color: #ffffff;">Got a Machine Scheduled for Build?</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 1.5rem;">Keep your assembly delivery date on schedule without taking on full-time payroll overhead.</p>
+            <p><strong>Engineer:</strong> Kong Beng Yu (B.Eng Mechatronics)</p>
+            <p style="margin-bottom: 1.8rem;"><strong>Location:</strong> Johor, Malaysia (Supporting SG & MY Sites)</p>
+            <a href="https://wa.me/60199818210?text=Hi%20Kong,%20I%20have%20a%20machine%20build%20and%20need%20PLC/Controls%20support." class="cta-btn" target="_blank">
+                💬 Message Me on WhatsApp (+6019-9818210)
+            </a>
+        </div>
+
+    </div>
+
     <footer>
-        &copy; 2026 Controls Engineering Partner. All Rights Reserved.
+        &copy; 2026 Kong Beng Yu — On-Demand Controls & Automation Engineering.
     </footer>
 
 </body>
