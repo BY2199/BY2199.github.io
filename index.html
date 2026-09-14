@@ -57,8 +57,21 @@
             line-height: 1.6;
         }
 
+        /* Site Header & Logo Branding */
+        .site-header {
+            padding: 1.5rem 1.5rem 0.5rem;
+            text-align: center;
+            background-color: var(--bg-dark);
+        }
+
+        .brand-logo {
+            max-width: 280px;
+            height: auto;
+            display: inline-block;
+        }
+
         .hero {
-            padding: 4rem 1.5rem 3rem;
+            padding: 2.5rem 1.5rem 3rem;
             text-align: center;
             background: radial-gradient(circle at top, #1e293b 0%, var(--bg-dark) 80%);
             border-bottom: 1px solid var(--card-border);
@@ -250,12 +263,18 @@
         }
 
         @media (max-width: 600px) {
+            .brand-logo { max-width: 220px; }
             .hero h1 { font-size: 1.9rem; }
             .hook-banner { font-size: 1.05rem; padding: 1rem; }
         }
     </style>
 </head>
 <body>
+
+    <!-- Logo Section -->
+    <div class="site-header">
+        <img src="Prothena_Logo_Secondary_Horizontal.png" alt="Prothena Automation Consultancy Logo" class="brand-logo">
+    </div>
 
     <header class="hero">
         <span class="badge-tag">On-Demand Controls Engineering</span>
