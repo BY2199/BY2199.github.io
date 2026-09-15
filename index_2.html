@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prothena Automation Consultancy</title>
+    <meta name="description" content="Freelance PLC programming, robot integration (ABB/Yaskawa), and precision motion control for machine builders in Johor, Ipoh, and Singapore.">
+    <meta name="keywords" content="PLC Programmer Johor,PLC Programmer Ipoh, PLC Freelancer, Robotics Engineer">
+
+    <!-- Schema.org JSON-LD Structured Data for Google AI & Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Prothena Automation Consultancy",
+      "url": "https://prothenaautomation.my",
+      "telephone": "+60199818210",
+      "email": "contact@prothenaautomation.my",
+      "founder": {
+        "@type": "Person",
+        "name": "Kong Beng Yu",
+        "jobTitle": "Lead Automation Engineer"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Johor",
+        "addressCountry": "MY"
+      },
+      "areaServed": ["Johor", "West Malaysia", "Singapore"],
+      "knowsAbout": ["PLC Programming", "HMI", "SCADA", "6-Axis Robotics", "Electrical CAD Design"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+60199818210",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Malay", "Chinese"]
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-dark: #0b0f19;
+            --card-bg: #151c2c;
+            --card-border: #232d42;
+            --accent-blue: #38bdf8;
+            --accent-green: #22c55e;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Shared glow panel behind the logo strip + hero so they read as one seamless section */
+        .top-glow {
+            background: radial-gradient(circle at top, #1e293b 0%, var(--bg-dark) 85%);
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        /* Site Header & Logo Branding */
+        .site-header {
+            padding: 1.5rem 1.5rem 0.5rem;
+            text-align: center;
+            background: transparent;
+        }
+
+        .brand-logo {
+            max-width: 460px;
+            width: 90%;
+            height: auto;
+            display: inline-block;
+        }
+
+        .hero {
+            padding: 2.5rem 1.5rem 3rem;
+            text-align: center;
+            background: transparent;
+            border-bottom: none;
+        }
+
+        .badge-tag {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin: 0 0 1rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+
+        .hero h1 span {
+            color: var(--accent-blue);
+        }
+
+        .hook-banner {
+            max-width: 750px;
+            margin: 1.5rem auto 2rem;
+            background: linear-gradient(90deg, rgba(34, 197, 94, 0.15) 0%, rgba(56, 189, 248, 0.15) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 1.2rem 1.8rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+        }
+
+        .contact-direct-info {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .contact-direct-info a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--accent-green);
+            color: #000000;
+            font-weight: 700;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            background-color: #16a34a;
+            color: #ffffff;
+        }
+
+        .cta-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            max-width: 900px;
+            margin: -2rem auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 1.2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 0 1.5rem 3rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.8rem;
+            transition: border 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+        }
+
+        .badge-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+
+        .tech-pill {
+            background: #1e293b;
+            color: #f1f5f9;
+            border: 1px solid #334155;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #151c2c 0%, #1e293b 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+        }
+
+        @media (max-width: 600px) {
+            .brand-logo { max-width: 320px; }
+            .hero h1 { font-size: 1.9rem; }
+            .hook-banner { font-size: 1.05rem; padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-glow">
+        <!-- Logo Section -->
+        <div class="site-header">
+            <img src="Prothena_Logo_Secondary_Horizontal.png" alt="Prothena Automation Consultancy Logo" class="brand-logo">
+        </div>
+
+        <header class="hero">
+            <span class="badge-tag">On-Demand Controls Engineering</span>
+            <h1>Subcontract PLC & Automation Partner <br><span>Johor & West Malaysia</span></h1>
+
+            <div class="hook-banner">
+                &ldquo;Bring your hardware & mechanics — I&rsquo;ll write the logic and make it run.&rdquo;
+            </div>
+
+            <a href="https://wa.me/60199818210?text=Hi%20Kong,%20I%20have%20a%20machine%20build%20and%20need%20PLC/Controls%20support." class="cta-btn" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 0C5.495 0 .184 5.311.184 11.867c0 2.09.546 4.13 1.583 5.926L.057 24l6.353-1.665a11.86 11.86 0 0 0 5.64 1.437h.005c6.554 0 11.865-5.311 11.865-11.868 0-3.17-1.234-6.148-3.475-8.39A11.788 11.788 0 0 0 12.05 0zm0 21.699h-.004a9.816 9.816 0 0 1-5.005-1.37l-.359-.213-3.77.988 1.007-3.677-.234-.377a9.822 9.822 0 0 1-1.505-5.183c0-5.433 4.421-9.854 9.874-9.854 2.637 0 5.115 1.028 6.98 2.895a9.798 9.798 0 0 1 2.89 6.964c0 5.434-4.42 9.827-9.874 9.827z"/></svg>
+                Direct WhatsApp Support
+            </a>
+
+            <div class="contact-direct-info">
+                Direct Line: <a href="tel:+60199818210">+6019-9818210</a> | Contact Engineer: Kong Beng Yu
+            </div>
+        </header>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-number">B.Eng</div>
+            <div class="stat-label">Mechatronics Degree</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">Multi-PLC</div>
+            <div class="stat-label">AB • Siemens • Omron</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">6-Axis</div>
+            <div class="stat-label">ABB & Yaskawa Robots</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">Turnkey</div>
+            <div class="stat-label">Site Testing & Support</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="section-title">How I Help Machine Builders (OEMs) & Integrators</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>PLC & HMI Turnkey Logic</h3>
+                <p>I review your requirements and program the control logic directly into your electrical control panel.</p>
+            </div>
+            <div class="card">
+                <h3>6-Axis Robot Control</h3>
+                <p>Robot programming and integration for ABB and Yaskawa platforms.</p>
+            </div>
+            <div class="card">
+                <h3>Electrical CAD & System Design</h3>
+                <p>Complete control architecture, Bill of Materials (BOM) selection, and panel schematics designed using EPLAN, E3 Series, and AutoCAD.</p>
+            </div>
+            <div class="card">
+                <h3>Functional Testing & Commissioning</h3>
+                <p>On-site or remote functional testing, hardware debugging, and after-sales support to ensure machine sign-off at customer sites.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Supported Hardware & Software Stack</h2>
+        <div class="card" style="margin-bottom: 2.5rem;">
+            <div class="badge-grid">
+                <span class="tech-pill">Allen-Bradley / Rockwell (Studio 5000)</span>
+                <span class="tech-pill">Siemens (TIA Portal S7-1200 / S7-1500)</span>
+                <span class="tech-pill">Omron (Sysmac Studio)</span>
+                <span class="tech-pill">Mitsubishi MELSEC</span>
+                <span class="tech-pill">ABB Robots</span>
+                <span class="tech-pill">Yaskawa Robots</span>
+                <span class="tech-pill">Fuji Alpha Servo Drives</span>
+                <span class="tech-pill">EPLAN Electric P8</span>
+                <span class="tech-pill">E3 Series / AutoCAD</span>
+                <span class="tech-pill">Ethernet / RS232 / Modbus</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Featured Engineering Deliverables</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Booster Gas Compressor Panel</h3>
+                <p>Engineered PLC I/O documentation, wiring schematics, and control logic systems.</p>
+            </div>
+            <div class="card">
+                <h3>PCB Transportation Machine</h3>
+                <p>Past projects include loaders/unloaders, a custom dual-lane PCB inverter, and turners.</p>
+            </div>
+            <div class="card">
+                <h3>Robotic Milling and Turning Machine</h3>
+                <p>Converts repetitive manual tasks to robotic operation in harsh environments, reducing labor costs.</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2 style="margin-top:0; font-size: 1.8rem; color: #ffffff;">Got a Machine Scheduled for Build?</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 1.5rem;">Keep your assembly delivery date on schedule without taking on full-time payroll overhead.</p>
+            <p><strong>Engineer:</strong> Kong Beng Yu (B.Eng Mechatronics)</p>
+            <p><strong>Phone / WhatsApp:</strong> <a href="tel:+60199818210" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">+6019-9818210</a></p>
+            <p style="margin-bottom: 1.8rem;"><strong>Location:</strong> Johor & West Malaysia</p>
+            <a href="https://wa.me/60199818210?text=Hi%20Kong,%20I%20have%20a%20machine%20build%20and%20need%20PLC/Controls%20support." class="cta-btn" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 0C5.495 0 .184 5.311.184 11.867c0 2.09.546 4.13 1.583 5.926L.057 24l6.353-1.665a11.86 11.86 0 0 0 5.64 1.437h.005c6.554 0 11.865-5.311 11.865-11.868 0-3.17-1.234-6.148-3.475-8.39A11.788 11.788 0 0 0 12.05 0zm0 21.699h-.004a9.816 9.816 0 0 1-5.005-1.37l-.359-.213-3.77.988 1.007-3.677-.234-.377a9.822 9.822 0 0 1-1.505-5.183c0-5.433 4.421-9.854 9.874-9.854 2.637 0 5.115 1.028 6.98 2.895a9.798 9.798 0 0 1 2.89 6.964c0 5.434-4.42 9.827-9.874 9.827z"/></svg>
+                Message Me on WhatsApp (+6019-9818210)
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; Copyright 2026 Prothena Automation Consultancy 202603207716 (JM1048043-U). All rights reserved.
+    </footer>
+
+</body>
+</html>
